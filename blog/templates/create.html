@@ -1,0 +1,22 @@
+<nav>
+  <a href="/create">Create Post</a> |
+  <a href="/search">Search post</a> |
+  <a href="/logout">logout</a> |
+  <a href="#">About us</a>
+  </nav>
+
+<form enctype="multipart/form-data" name="Createpost" method="post" >
+{% csrf_token %}
+{{form.as_p}}
+<button type="submit" class="btn btn-primary btn-block btn-lg">Sign Up</button>
+</form>
+
+=================================================================
+
+{% if forma.errors %}
+  <ul>
+    {% for key,value in forma.errors.items %} 
+      <li>{{ key|escape }} : {{ value|escape }}</li>
+    {% endfor %}
+  </ul>
+{% endif %}

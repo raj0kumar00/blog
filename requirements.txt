@@ -1,0 +1,17 @@
+asgiref==3.2.5
+certifi==2019.11.28
+chardet==3.0.4
+decorator==4.4.2
+Django==3.0.4
+django-cors-headers==3.2.1
+django-simple-math-captcha==1.0.9
+freeze==1.0.10
+idna==2.9
+myenv==201902.7
+Pillow==7.0.0
+pytz==2019.3
+six==1.14.0
+soupsieve==2.0
+sqlparse==0.3.1
+urllib3==1.25.8
+validators==0.14.2

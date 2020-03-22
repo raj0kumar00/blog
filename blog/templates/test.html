@@ -1,0 +1,60 @@
+<form name="FormName" method="post" />
+    <input type="text" id="nameValidation1"/><br>
+    <input type="text" id="nameValidation2"/>
+    <div id="message">
+        <h5>Password must contain the following:</h5>
+        <p id="letter" class="invalid">A <b>lowercase</b> letter</p>
+        <p id="capital" class="invalid">A <b>capital (uppercase)</b> letter</p>
+        <p id="number" class="invalid">A <b>number</b></p>
+        <p id="length" class="invalid">Minimum <b>8 characters</b></p>
+        <p id="match" class="invalid">both password<b>match</b> each other</p>
+      </div>
+
+</form>
+<script type="text/javascript">
+    var myInput1 = document.getElementById("nameValidation1");
+    var myInput2 = document.getElementById("nameValidation2");
+    myInput2.onkeyup = function() {
+        if(myInput1.value == myInput2.value) {
+            document.getElementById("match").style.display = "none";
+        } else {
+            document.getElementById("match").style.display = "block";
+        }
+    }
+    myInput1.onkeyup = function() {
+        //small letters===================================
+        var lowerCaseLetters = /[a-z]/g;
+        if(myInput1.value.match(lowerCaseLetters)) {
+            document.getElementById("letter").style.display = "none";
+        } else {
+            document.getElementById("letter").style.display = "block";
+        }
+        //capital letters=================================
+        var lowerCaseLetters = /[A-Z]/g;
+        if(myInput1.value.match(lowerCaseLetters)) {
+            document.getElementById("capital").style.display = "none";
+        } else {
+            document.getElementById("capital").style.display = "block";
+        }
+        //numbers=========================================
+        var lowerCaseLetters = /[0-9]/g;
+        if(myInput1.value.match(lowerCaseLetters)) {
+            document.getElementById("number").style.display = "none";
+        } else {
+            document.getElementById("number").style.display = "block";
+        }
+        //length===========================================
+        if(myInput1.value.length >= 8) {
+            document.getElementById("length").style.display = "none";
+        } else {
+            document.getElementById("length").style.display = "block";
+        }
+        //match====================
+        if(myInput1.value == myInput2.value) {
+            document.getElementById("match").style.display = "none";
+        } else {
+            document.getElementById("match").style.display = "block";
+        }
+
+    }
+</script>

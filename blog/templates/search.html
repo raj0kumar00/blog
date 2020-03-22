@@ -1,0 +1,34 @@
+<nav>
+    <a href="/create">Create Post</a> |
+    <a href="/search">Search post</a> |
+    <a href="/logout">logout</a> |
+    <a href="#">About us</a>
+    </nav>
+<center>
+<form class="form-horizontal" method="POST">
+    <fieldset>
+    
+    <!-- Form Name -->
+    <legend>Search posts</legend>
+    {% csrf_token %}
+    <!-- Text input-->
+    <div class="form-group">
+      <label class="col-md-4 control-label" for="u"></label>  
+      <div class="col-md-4">
+      <input id="u" name="u" type="text" placeholder="Enter name" class="form-control input-md" required="">
+        
+      </div>
+    </div>
+    
+    <!-- Button -->
+    <div class="form-group">
+      <label class="col-md-4 control-label" for="submit"></label>
+      <div class="col-md-4">
+        <button id="submit" name="submit" class="btn btn-primary">submit</button>
+      </div>
+    </div>
+    
+    </fieldset>
+    </form>
+   </center>
+    

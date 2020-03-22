@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<head>
+    <title>{{post.title}}</title>
+    <style>
+        .box{
+            border-style: solid;
+            text-align: center;
+        }
+        .title{
+            color:red;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="/create">Create Post</a> |
+        <a href="/search">Search post</a> |
+        <a href="/logout">logout</a> |
+        <a href="#">About us</a>
+        </nav>
+<div class="box">
+{{post.title}}<br>
+<img src="{{post.image.url}}" width="200px" height="200px"><br>
+{{post.Description}}
+</div>
+<div class="box">
+Author : {{post.author}} |created on : {{post.created_on}} | avalibility status : {{post.status}}
+</div>
+</body>
