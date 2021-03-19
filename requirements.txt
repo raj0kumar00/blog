@@ -8,7 +8,7 @@ django-simple-math-captcha==1.0.9
 freeze==1.0.10
 idna==2.9
 myenv==201902.7
-Pillow==7.0.0
+Pillow==8.1.1
 pytz==2019.3
 six==1.14.0
 soupsieve==2.0
