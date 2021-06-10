@@ -2,7 +2,7 @@ asgiref==3.2.5
 certifi==2019.11.28
 chardet==3.0.4
 decorator==4.4.2
-Django==3.0.4
+Django==3.1.12
 django-cors-headers==3.2.1
 django-simple-math-captcha==1.0.9
 freeze==1.0.10
